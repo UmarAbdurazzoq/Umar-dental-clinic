@@ -1,0 +1,86 @@
+.appointment {
+  position: relative;
+  z-index: 2;
+  margin-top: -60px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  width: 540px;
+  padding: 18px 33px;
+  background-color: #0055b8;
+  border-radius: 5px;
+}
+
+.appointment__heading {
+  margin: 0;
+  margin-top: 7px;
+  margin-bottom: 29px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+.appointment__input {
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 18px;
+  margin-bottom: 12px;
+  color: #ffffff80;
+  background-color: #0055b8;
+}
+
+.appointment__checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.appointment__data {
+  width: 256px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.appointment__checkbox-item:checked~.checkbox__controller::before {
+  display: block;
+}
+
+.checkbox__controller {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  &::before {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    width: 24px;
+    height: 17px;
+    content: "";
+    background-image: url("../img/tick.svg");
+  }
+}
+
+@include breakpoint-down(375px){
+  .appointment{
+    margin-top: 0;
+    z-index: 0;
+  }
+}

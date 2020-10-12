@@ -13,7 +13,7 @@
   padding: 0;
   list-style-type: none;
   max-width: 1920px;
-  height: 900px;
+  max-height: 900px;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
@@ -37,7 +37,7 @@
   p {
     margin: 0;
     padding: 0;
-    width: 360px;
+    max-width: 360px;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -50,7 +50,7 @@
     padding: 0;
     margin-top: 10px;
     margin-bottom: 27px;
-    width: 543px;
+    max-width: 543px;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -117,8 +117,50 @@
 
     img {
       max-width: 1024px;
-      height: 872px;
+      height: 900px;
     }
   }
 
+}
+@include breakpoint-down(876px) {
+  .hero-section__bg {
+
+    img {
+      max-width: 1276px;
+      max-height: 900px;
+    }
+  }
+
+}
+
+@include breakpoint-down(450px){
+  .hero-section__controllers{
+    bottom: 300px;
+  }
+  .hero-section{
+    padding-bottom: 60px;
+  }
+  .hero-section__bg {
+
+    img {
+      max-width: 676px;
+      max-height: 600px;
+    }
+  }
+  .hero-section__bg-container{
+    position: relative;
+    top: 10%;
+    left: 0;
+    p{
+      max-width: 333px;
+      text-align: center;
+    }
+    h2{
+      max-width: 433px;
+      text-align: center;
+    }
+    .button{
+      display: none;
+    }
+  }
 }
