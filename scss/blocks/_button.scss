@@ -1,0 +1,22 @@
+.button {
+  border: none;
+  background: none;
+  min-width: 265px;
+  color: #fff;
+  padding-top: 24px;
+  padding-bottom: 23px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  background: #0055B8;
+  border-radius: 5px;
+
+  &:hover{
+    opacity: 0.8;
+  }
+
+  &:active{
+    opacity: 0.6;
+  }
+}
