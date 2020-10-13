@@ -46,7 +46,7 @@
      background-color: #FFE040;
 
      &::before {
-       background-image: url("../../img/prosthetics.svg");
+       background-image: url("../img/prosthetics.svg");
      }
    }
 
@@ -80,6 +80,8 @@
    .info-section__list{
      order: 2;
      flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
    }
  }
 

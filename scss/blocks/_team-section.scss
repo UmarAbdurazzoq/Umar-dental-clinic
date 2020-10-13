@@ -1,14 +1,14 @@
-.service-section__container {
+.team-section__container {
   position: relative;
   padding-left: 80px;
   padding-right: 80px;
 }
 
-.service-section__heading {
+.team-section__heading {
   position: relative;
   margin: 0;
   padding: 0;
-  max-width: 140px;
+  max-width: 300px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -47,13 +47,13 @@
   }
 }
 
-.service-section__text {
+.team-section__text {
   margin: 0;
   padding: 0;
   margin-top: 11px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 600px;
+  max-width: 900px;
   font-weight: 300;
   font-size: 18px;
   line-height: 25px;
@@ -61,7 +61,7 @@
   color: #4D4D4D;
 }
 
-.service-section__list {
+.team-section__list {
   margin: 0;
   padding: 0;
   margin-top: 10px;
@@ -74,98 +74,45 @@
   overflow: hidden;
 }
 
-.service-section__list-item {
+.team-section__list-item {
   display: flex;
   flex-shrink: 0;
-  align-items: center;
   flex-direction: column;
-  text-align: center;
-  margin-right: 35px;
-  width: 200px;
-  background: #FFFFFF;
-  box-shadow: 0px 0px 35px #0000001a;
-  border-radius: 5px;
-  padding: 30px;
-  background-color: #fff;
+  justify-content: center;
+  margin-right: 50px;
+
+  img {
+    flex-shrink: 0;
+    order: -1;
+  }
 
   h3 {
-    flex-grow: 1;
+    max-width: 130px;
     margin: 0;
     padding: 0;
-    width: 95px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    color: #272727;
-
-    &::before {
-      display: block;
-      width: 77px;
-      height: 77px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 14px;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
-      flex-shrink: 0;
-      content: "";
-    }
-
-  }
-
-  s {
-    display: block;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 3px;
-    width: 42px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    text-decoration-line: line-through;
-    color: #00000040;
-
-    &::before {
-      display: block;
-      content: "";
-      width: 25px;
-      height: 1px;
-      margin-top: 13px;
-      margin-bottom: 13px;
-      margin-left: auto;
-      margin-right: auto;
-      background-color: #0A60C3;
-      border: 1px solid #0A60C3;
-    }
-  }
-
-  span {
-    display: block;
-    width: 42px;
+    margin-top: 15px;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-    color: #0A60C3;
+    color: #000000;
   }
-}
 
-.service-section__dental::before {
-  background-image: url("../img/treatment2.svg");
-}
+  p {
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    width: 156px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+  }
 
-.service-section__hygien::before {
-  background-image: url("../img/hygiene.svg");
-}
-
-.service-section__diagnost::before {
-  background-image: url("../img/diagnostics.svg");
-}
-
-.service-section__child::before {
-  background-image: url("../img/childrens-dentistry.svg");
+  &:nth-child(3) {
+    margin-right: 0;
+  }
 }
 
 .s-prev {
@@ -185,6 +132,7 @@
   background-size: contain;
   background-position: center right 35%;
 }
+
 .s-next {
   position: absolute;
   right: 0;
@@ -206,11 +154,11 @@
 @include breakpoint-down(500px) {
 
   .s-prev,
-  .s-next{
+  .s-next {
     display: none;
   }
 
-  .service-section__container {
+  .team-section__container {
     padding-left: 10px;
     padding-right: 10px;
   }
