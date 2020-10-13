@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>Dental Clinic</title>
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -38,6 +38,8 @@
         <nav class="site-header__navbar">
 
           <a class="site-header__logo-min" href="index.html"><img src="img/logo-min.svg" alt="logo of site"></a>
+
+          <button class="toggle"></button>
 
           <ul class="site-header__list">
 
@@ -90,7 +92,11 @@
 
       <ul class="hero-section__slider">
         <li class="hero-section__bg">
-          <img src="img/hero-bg.png" alt="woman smile" srcset="img/hero-bg.png 1x, img/hero-bg@2x.png 2x">
+          <picture>
+            <source media="(max-width:575px)" srcset="img/heero-bg-375.png 1x, img/heero-bg-375@2x.png 2x">
+
+            <img src="img/hero-bg.png" alt="woman smile" srcset="img/hero-bg.png 1x, img/hero-bg@2x.png 2x">
+          </picture>
           <div class="container">
             <div class="hero-section__bg-container">
               <p>Modern technology and expert-class dentists</p>

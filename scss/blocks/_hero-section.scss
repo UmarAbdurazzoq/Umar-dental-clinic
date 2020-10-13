@@ -143,8 +143,9 @@
   .hero-section__bg {
 
     img {
-      max-width: 676px;
+      max-width: 100%;
       max-height: 600px;
+      object-fit: contain;
     }
   }
   .hero-section__bg-container{

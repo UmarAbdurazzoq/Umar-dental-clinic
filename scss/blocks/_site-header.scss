@@ -218,6 +218,19 @@
   }
 }
 
+.toggle {
+  display: none;
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  border:none;
+  background: none;
+  background-image: url("../img/gamburger.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
 @include breakpoint-down(1024px) {
   body {
     margin-top: 68px;
@@ -245,10 +258,66 @@
     border-radius: 0;
   }
 
+
+  .toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .site-header--nojs .toggle {
+    display: none;
+  }
+  .site-header--open .toggle {
+    background-image: url("../img/close.svg");
+  }
+
+  .site-header__socials,
+  .site-header__list {
+    display: none;
+  }
+  .site-header--open .site-header__list,
+  .site-header--open .site-header__socials {
+    display: flex;
+  }
+
   .site-header--nojs .site-header__list {
     order: 2;
     margin-left: auto;
     margin-right: auto;
+  }
+
+
+  .site-header--open .site-header__list {
+    order: 0;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .site-header--open .site-header__list-item {
+    width: 100%;
+  }
+
+  .site-header--open .site-header__link {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-top: 24px;
+    padding-bottom: 23px;
+    border: 2px solid #ffd600;
+    color: #ffd600;
+
+    &:active {
+      color: #0055b8;
+      background-color: #ffd600;
+    }
+  }
+
+  .site-header--open .site-header__socials {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
   }
 }
 
