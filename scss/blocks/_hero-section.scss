@@ -126,10 +126,9 @@
 }
 @include breakpoint-down(876px) {
   .hero-section__bg {
-    
+    width: 100%;
     img {
-      max-width: 1206px;
-      max-height: 800px;
+      width: 100%;
       object-fit: cover;
       object-position: center center;
     }
@@ -151,12 +150,13 @@
     padding-bottom: 60px;
   }
   .hero-section__bg {
-    
+    width: 100%;
     img {
+      width: 100%;
       max-width: 600px;
       max-height: 500px;
       object-fit: cover;
-      object-position: center right;
+      object-position: right center;
     }
   }
   .hero-section__bg-container{
@@ -180,14 +180,3 @@
   }
 }
 
-@include breakpoint-down(500px){
-  .hero-section__bg {
-    
-    img {
-      max-width: 900px;
-      max-height: 600px;
-      object-fit: cover;
-      object-position: center right;
-    }
-  }
-}
