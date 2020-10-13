@@ -118,22 +118,32 @@
     img {
       max-width: 1024px;
       height: 900px;
+      object-fit: cover;
+      object-position: center center;
     }
   }
-
+  
 }
 @include breakpoint-down(876px) {
   .hero-section__bg {
-
+    
     img {
-      max-width: 1276px;
-      max-height: 900px;
+      max-width: 1206px;
+      max-height: 800px;
+      object-fit: cover;
+      object-position: center center;
     }
   }
 
+  .hero-section__controllers{
+    bottom: 100px;
+  }
+
+
+
 }
 
-@include breakpoint-down(450px){
+@include breakpoint-down(500px){
   .hero-section__controllers{
     bottom: 300px;
   }
@@ -141,11 +151,12 @@
     padding-bottom: 60px;
   }
   .hero-section__bg {
-
+    
     img {
-      max-width: 100%;
-      max-height: 600px;
-      object-fit: contain;
+      max-width: 600px;
+      max-height: 500px;
+      object-fit: cover;
+      object-position: center right;
     }
   }
   .hero-section__bg-container{
@@ -165,6 +176,18 @@
     }
     .button{
       display: none;
+    }
+  }
+}
+
+@include breakpoint-down(500px){
+  .hero-section__bg {
+    
+    img {
+      max-width: 900px;
+      max-height: 600px;
+      object-fit: cover;
+      object-position: center right;
     }
   }
 }
