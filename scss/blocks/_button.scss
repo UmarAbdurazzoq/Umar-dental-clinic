@@ -23,6 +23,12 @@
     padding-bottom: 17px;
   }
 
+  &--light{
+    background-color: #fff;
+    border: 2px solid #0055B8;
+    color: #4d4d4d;
+  }
+
   &:hover{
     opacity: 0.8;
   }
