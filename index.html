@@ -151,7 +151,6 @@
               <span class="checkbox__controller"></span>
             </label>
           </div>
-
         </form>
       </div>
     </section>
@@ -339,26 +338,48 @@
         </div>
       </section>
 
-      <section class="quality-section">
-        <div class="container container-wide quality-section__container">
+      <section class="location-section">
+        <div class="container location-section__container">
 
-          <h2 class="quality-section__heading">We are confident in the quality of our services</h2>
-          <p class="quality-section__text">Our clinic is located in the center of the Sverdlovsk district, at the
+          <form class="appointment" action="https://echo.htmlacademy.ru">
+            <h3 class="appointment__heading">Appointment</h3>
+  
+            <input class="appointment__input" type="text" placeholder="Name" name="name" autocomplete="off">
+  
+            <input class="appointment__input" type="text" placeholder="Phone" name="phone" autocomplete="off">
+  
+            <button class="button button--yellow">Appointment</button>
+  
+            <div class="appointment__checkbox">
+              <span class="appointment__data">I give my consent to the storage and processing of personal data</span>
+              <label>
+                <input class="visually-hidden appointment__checkbox-item" type="checkbox" checked>
+                <span class="checkbox__controller"></span>
+              </label>
+            </div>
+          </form>
+
+          <h2 class="location-section__heading">Convenient location and working hours</h2>
+          <p class="location-section__text">Our clinic is located in the center of the Sverdlovsk district, at the
             address: Raboche-Krestyanskaya Street 6. From the bus stop “Family” hypermarket to our dental clinic - 5 minutes on foot.</p>
+            
+         </div>
 
+          <div class="container container-wide">
+            <a href="https://yandex.uz/maps/10335/tashkent/?ll=69.204292%2C41.329998&mode=search&oid=203287967764&ol=biz&sll=69.279737%2C41.311151&sspn=0.361176%2C0.166449&text=najot%20ta%27lim&z=14">
+              <picture class="location-section__img">
+                <source media="(max-width:380px)" srcset="img/map-375.png 1x, img/map-375@2x.png 2x">
+    
+                <source media="(max-width:1024px)" srcset="img/map-1024.png 1x, img/map-1024@2x.png 2x">
+    
+                <source media="(max-width:1360px)" srcset="img/map-1360.png 1x, img/map-1360@2x.png 2x">
+    
+                <img class="location-section__img" src="img/map.png" alt="child wash fake teeth"
+                  srcset="img/map.png 1x, img/map@2x.png 2x">
+              </picture>
+            </a>
+          </div>
 
-          <picture class="quality-section__img">
-            <source media="(max-width:380px)" srcset="img/child-dent-375.png 1x, img/child-dent-375@2x.png 2x">
-
-            <source media="(max-width:1024px)" srcset="img/child-dent-1024.png 1x, img/child-dent-1024@2x.png 2x">
-
-            <source media="(max-width:1360px)" srcset="img/child-dent-1360.png 1x, img/child-dent-1360@2x.png 2x">
-
-            <img class="quality-section__img" src="img/child-dent.png" alt="child wash fake teeth"
-              srcset="img/child-dent.png 1x, img/child-dent@2x.png 2x">
-          </picture>
-
-        </div>
       </section>
       
     </main>
